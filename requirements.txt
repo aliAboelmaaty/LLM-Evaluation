@@ -1,0 +1,92 @@
+# ============================================================
+# LLM Evaluation Framework - Requirements
+# Bachelor's Thesis: Systematic Testing of Diagnostic
+# Capabilities of Local Multimodal Language Models Using RAG
+# ============================================================
+#
+# REPRODUCIBILITY REQUIREMENT:
+# For cryptographic provenance to work, these exact versions must be used.
+# Different versions of libraries (especially rank-bm25 and scikit-learn)
+# can produce different retrieval results, breaking SHA-256 hash matching.
+#
+# To reproduce results from published experiments:
+# 1. Use: pip install -r requirements.txt
+# 2. Verify your environment matches the exported environment.json
+# 3. See REPRODUCIBILITY.md for detailed instructions
+# ============================================================
+
+# ============================================================
+# CRITICAL: Exact versions required for reproducibility
+# These libraries affect retrieval and must match exactly
+# ============================================================
+rank-bm25==0.2.2              # BM25 retrieval (version-sensitive ranking)
+scikit-learn==1.3.0           # Semantic similarity metrics (affects scoring)
+sentence-transformers==2.2.2  # Embeddings for answer_correctness metric
+numpy==1.24.3                 # Numerical operations (affects precision)
+
+# ============================================================
+# Core dependencies (pinned for stability)
+# ============================================================
+pandas==2.0.3                 # Data processing and results management
+
+# Core LLM APIs
+replicate==1.0.7              # Replicate API client
+google-generativeai==0.8.3    # Google Gemini API
+openai==1.40.0                # OpenAI API client (for GPT-5)
+
+# PDF Processing
+pypdf==4.0.1                  # Primary PDF text extraction
+PyPDF2==3.0.1                 # Fallback PDF extraction
+pdf2image==1.17.0             # PDF to image conversion for OCR
+pytesseract==0.3.13           # OCR for image-based PDFs
+Pillow==10.2.0                # Image processing
+
+# HTTP & API
+requests==2.31.0              # HTTP requests
+httpx==0.27.0                 # Async HTTP client
+
+# Utilities
+python-dotenv==1.0.1          # Secure API key management
+tqdm==4.66.2                  # Progress bars for experiments
+pydantic==2.6.4               # Data validation
+
+# ============================================================
+# Development & Testing (optional but recommended)
+# ============================================================
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# ============================================================
+# Documentation (optional)
+# ============================================================
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.3.0
+
+# ============================================================
+# NOTES ON REPRODUCIBILITY:
+#
+# 1. WHY EXACT VERSIONS MATTER:
+#    - BM25 ranking algorithms can change between versions
+#    - Different chunk rankings → different retrieved contexts
+#    - Different contexts → different prompts → different SHA-256 hashes
+#    - Result: Reproducibility claims fail across machines
+#
+# 2. VERIFYING YOUR ENVIRONMENT:
+#    After running an experiment, check the exported environment.json
+#    file to see the exact versions used. To reproduce results, your
+#    environment must match those versions exactly.
+#
+# 3. TROUBLESHOOTING HASH MISMATCHES:
+#    If your cryptographic hashes don't match published results:
+#    a. Compare your environment.json with the published one
+#    b. Check for version mismatches in critical libraries
+#    c. Reinstall with: pip install --force-reinstall -r requirements.txt
+#    d. See REPRODUCIBILITY.md for detailed troubleshooting
+#
+# 4. FUTURE COMPATIBILITY:
+#    This file represents the TESTED configuration. Using different
+#    versions may work but will break cryptographic provenance.
+# ============================================================

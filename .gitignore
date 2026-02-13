@@ -1,0 +1,92 @@
+# LLM Evaluation Framework - Git Ignore
+
+# Environment variables (IMPORTANT: Never commit API keys!)
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# Data & Results (you may want to adjust these)
+data/
+results/
+*.csv
+*.json
+!examples/*.csv
+!examples/*.json
+
+# PDFs and manuals (large files)
+*.pdf
+!examples/*.pdf
+
+# Model outputs
+outputs/
+experiments/
+logs/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.log

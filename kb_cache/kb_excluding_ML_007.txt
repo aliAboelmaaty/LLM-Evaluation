@@ -1,0 +1,855 @@
+===========================================================================
+ML Application Case #001
+===========================================================================
+Paper: A machine learning and clustering-based methodology for the identification of lead users and their needs from online communities
+Domain: Customer Analysis
+
+Problem Context:
+Nowadays, online community platforms provide firms with a valuable and dynamic source of information for conducting market and innovation research. High-technology companies, in particular, depend on lead users to support the development of highly novel products or easily adaptable services. These firms collect large amounts of behavioral and textual data from their online communities, such as posts, replies, and reviews, which reflect users' expertise, engagement, and opinions. To remain competitive, companies must leverage this online information efficiently and objectively to guide product development and reduce innovation risks.
+
+Problem Formulation:
+The task involves the identification of users who exhibit the distinctive characteristics and behavioral patterns of lead users within online community networks. Moreover, these lead users must be grouped according to similarities in their expressed needs, preferences, and perceptions.
+
+ML Solution:
+- Problem Type: Classification; Clustering
+- Algorithm: Classifikation: RF; Clustering: RSKC
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. The ensemble method provides robust performance and handles complex feature interactions.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #002
+===========================================================================
+Paper: Machine learning-based design features decision support tool via customers purchasing data analysis
+Domain: Customer Analysis
+
+Problem Context:
+Decision-making on product design features such as specifications and components is a crucial part of new product development, especially under market-driven conditions. Customers' preferences and their variations strongly influence these design decisions. Traditionally, methods such as surveys, the Kano model, and QFD have been used to analyze customer needs, but these approaches rely heavily on designer expertise and small customer samples. With the rise of e-commerce, large-scale online purchasing data has emerged as a new source for understanding customer preferences. Such data provides insights into both conscious and subconscious preferences that are reflected in purchasing behavior. However, the challenge lies in handling the large, heterogeneous datasets, accounting for physical constraints among product components.
+
+Problem Formulation:
+Customers' preferred product specifications and their feasible combinations should be predicted from product sales data. Based on the preferred product features and their combinations, common and alternative designs of product features should be grouped.
+
+ML Solution:
+- Problem Type: Regression; Clustering
+- Algorithm: Knn (Cluster), ANN (Prediction)
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #003
+===========================================================================
+Paper: Mining information users' knowledge for one-to-one marketing on information appliance
+Domain: Customer Analysis
+
+Problem Context:
+With the rapid convergence of information technologies, products once limited to traditional computing have evolved into diverse multimedia information appliances such as smartphones, PDAs, and portable media players. This technological transformation, together with the growing prevalence of the internet, has significantly increased the variety of consumer behaviors, market competition, and business opportunities. At the same time, traditional mass marketing has lost effectiveness due to shifting lifestyles, complex product ecosystems, and the growing demand for personalized experiences. Consequently, information appliance firms face the challenge of understanding individual customer needs, enhancing relationships through tailored product offerings, and identifying opportunities for cross-selling and new product development within a highly dynamic and data-rich environment.
+
+Problem Formulation:
+Relationships between products, functions, and user characteristics that frequently occur together should be identified to reveal potential cross-selling opportunities and product-usage associations. In addition, users should be grouped into segments with similar demographic attributes and behavioral patterns in order to uncover distinct profiles of product and function usage.
+
+ML Solution:
+- Problem Type: Classification; Association Rule
+- Algorithm: Apriori Algorithm, CART
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #004
+===========================================================================
+Paper: An Integrated Approach for Product Development using Latent Dirichlet Allocation and Gradient Boosting Decision Tree Methods
+Domain: Product Development
+
+Problem Context:
+The COVID-19 pandemic placed significant pressure on global manufacturing and accelerated the digital transformation of the industry toward models such as Customer-to-Manufacturer (C2M). This model enables manufacturers to directly address end-consumer needs, thereby aligning product development, production, and marketing more closely with actual market demands. Through the increasing use of e-commerce platforms and the integration of consumer information into development processes, research and development efficiency can be improved and product innovation accelerated. In Taiwan, technological start-ups and national investments have supported this transition, providing extensive digital resources and market data. However, suitable analytical frameworks to systematically utilize these data for supporting development-related decision-making are still lacking.
+
+Problem Formulation:
+First, overall product evaluations should be predicted based on characteristic features and customer feedback to anticipate market acceptance.
+Second, customer opinions should be grouped to identify common themes and recurring needs across different product categories.
+
+ML Solution:
+- Problem Type: Regression; Clustering
+- Algorithm: LDA + PR, RF, MP, LightGBM, ParameterRange-LightGBM
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. The ensemble method provides robust performance and handles complex feature interactions.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #005
+===========================================================================
+Paper: Product portfolio identification based on association rule mining
+Domain: Product Development
+
+Problem Context:
+Product portfolio planning determines how a company aligns its product offerings with customer needs while balancing market variety and production complexity. In competitive and customization-driven markets, firms must decide which product variations to offer to achieve both customer satisfaction and operational efficiency. This process involves translating often vague and conflicting customer requirements into functional specifications that define product families and platforms. The identification of these specifications is complicated by imprecise requirement structures, differing vocabularies among stakeholders, and unclear relationships between customer demands and product functions.
+
+Problem Formulation:
+Functional requirements should be grouped according to their similarities to form coherent sets of product functions. In a subsequent step, the relationships between customer needs and these groups of functional requirements should be identified to define suitable product offerings
+
+ML Solution:
+- Problem Type: Clustering; Association Rule
+- Algorithm: Fuzzy Clustering; Apriori Algorithm
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #006
+===========================================================================
+Paper: Mining customer knowledge for exploring online group buying behavior
+Domain: Customer Analysis
+
+Problem Context:
+Online group buying has become an increasingly important marketing approach that enables customers to obtain substantial discounts on products and services by aggregating their purchasing power. The concept benefits both buyers and sellers-customers gain access to premium goods at lower prices, while businesses can attract new customers, explore alternative sales channels, and experiment with new business models. In Taiwan, the spread of internet commerce and economic pressure have accelerated the popularity of such platforms. However, the market remains highly competitive, characterized by short product life cycles, shifting consumer demands, and concerns about product quality and transaction security. Understanding the behavior, preferences, and motivations of group buying participants has therefore become essential for developing effective marketing strategies and improving service quality.
+
+Problem Formulation:
+Customers should be grouped according to similar characteristics and behavioral patterns to distinguish potential from target online group buying customers. Within these groups, purchasing preferences and relationships between customer attributes and product categories should be identified in order to uncover underlying tendencies and demand patterns in online group buying.
+
+ML Solution:
+- Problem Type: Clustering; Association Rule
+- Algorithm: kmeans Cluster, Apriori Algorithm
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The clustering algorithm can identify natural groupings in the data without requiring labeled examples. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #008
+===========================================================================
+Paper: Mining customer knowledge for product line and brand extension in retailing
+Domain: Customer Analysis
+
+Problem Context:
+Retailing represents the final stage of the supply chain, connecting products or services from manufacturers-often across continents-to end consumers. Within this context, product line extensions play a strategic role by expanding an existing product range through new offerings within the same category. Such extensions aim to provide customers with broader choices, strengthen brand presence, and safeguard against competitive market entries. Typically, these extensions are marketed under an established brand umbrella to maintain recognition and consumer trust.
+
+Problem Formulation:
+Relationships between customer characteristics, purchasing behaviors, and product preferences shlould be identified, in order to uncover underlying patterns that can support decisions on product and brand extensions. Then, customer opinions should be grouped to reveal common themes and shared needs across different segments, providing a structured understanding of consumer expectations.
+
+ML Solution:
+- Problem Type: Clustering; Association Rule
+- Algorithm: Apriori Algorithm, Kmeans
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The clustering algorithm can identify natural groupings in the data without requiring labeled examples. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #009
+===========================================================================
+Paper: Ontology-based data mining approach implemented on exploring product and brand spectrum
+Domain: Product Development
+
+Problem Context:
+In the competitive beverage market, companies must clearly understand how their products and brands are positioned relative to competitors. The brand spectrum serves as a visual framework to illustrate this positioning and reveal consumer preferences. However, businesses often struggle to grasp how their products fit into the retail landscape or how customers perceive their brands, making it difficult to define clear market segments and targeted strategies.
+
+Problem Formulation:
+Customer information and lifestyle data should be grouped to uncover distinct segments of consumers that share similar purchasing behaviors and preferences. Based on these segments, relationships between purchased products and preferred brands should be identified to reveal recurring combinations and interconnections that characterize consumers' choices.
+
+ML Solution:
+- Problem Type: Clustering; Association Rule
+- Algorithm: Hierachical Clustering; Apriori Algorithm
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #010
+===========================================================================
+Paper: How to design and utilize online customer center to support new product concept generation
+Domain: Customer Analysis
+
+Problem Context:
+Websites have become important channels for companies to interact with customers, yet their use has largely been limited to managing complaints rather than generating insights for new product development. With the growing availability of customer feedback through online customer centers, firms have access to large volumes of textual data that contain valuable expressions of customer needs and experiences.
+
+Problem Formulation:
+Customer opinions collected from the online customer center should be grouped according to similarities in expressed needs to identify distinct segments with comparable expectations and priorities. Then, the relationships between different customer needs should be identified to uncover which needs frequently occur together and thus indicate interrelated product attributes that should be considered jointly in product design.
+
+ML Solution:
+- Problem Type: Clustering; Association Rule
+- Algorithm: Knn (Cluster), DT (Asociation)
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #011
+===========================================================================
+Paper: Deep Convolutional Neural Networks-Based Market Strategy for Early-Stage Product Development
+Domain: Customer Analysis
+
+Problem Context:
+New product development (NPD) is crucial for companies to remain competitive in rapidly changing markets. However, the process is complex, resource-intensive, and marked by high uncertainty and failure rates, particularly in the electronics industry. Success depends on multiple interrelated factors such as organizational capabilities, collaboration structures, leadership, and alignment with customer needs. To manage and improve NPD performance, it is necessary to identify and measure critical success factors and their interactions across different functions within the development process.
+
+Problem Formulation:
+The overall success and performance level of new product development should be predicted based on the key performance indicators and identified success factors.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: NN
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #012
+===========================================================================
+Paper: Customer Sale Analysis and Classification Using Machine Learning Algorithm
+Domain: Customer Analysis
+
+Problem Context:
+Reliable sales forecasting is essential for decisions related to pricing, inventory control, and marketing strategies. Sales performance depends on various external and internal factors, including historical transaction data, consumer demographics, market trends, seasonal variations, promotional campaigns, and macroeconomic conditions. A precise understanding of these factors allows companies to allocate resources efficiently, minimize waste, and enhance profitability through improved business intelligence.
+
+Problem Formulation:
+The future sales volume of products should be predicted based on historical sales data and influencing factors such as price, location, and promotions.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: LR, LRR, SVM, RF, DT
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. The ensemble method provides robust performance and handles complex feature interactions. Support vector methods are effective for high-dimensional data and non-linear decision boundaries.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #013
+===========================================================================
+Paper: A Robust Predicted Performance Analysis Approach for Data-Driven Product Development in the Industrial Internet of Things
+Domain: Product Development
+
+Problem Context:
+Industrial Internet of Things (IIoT) enables manufacturers to collect and integrate large amounts of data from sensors and connected equipment throughout the production process. This infrastructure supports performance monitoring, optimization, and quality assurance in product development. However, despite the availability of abundant operational data, existing performance analysis approaches often rely on simplified models and overlook uncertainties inherent in design and operation. Consequently, early-stage performance evaluation remains challenging, particularly when numerous design variables interact in complex ways.
+
+Problem Formulation:
+Key performance parameters of a product, such as the overall performance of a hydraulic press structure, should be predicted based on design and operating conditions.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: LSSVR
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #014
+===========================================================================
+Paper: Forecasting New Product Demand Using Domain Knowledge and Machine Learning
+Domain: Product Development
+
+Problem Context:
+Forecasting demand for newly developed products is inherently difficult because it requires understanding complex interactions among numerous market variables when little or no historical data are available. In such cases, traditional quantitative forecasting tools that rely on extensive past data are ineffective, while judgment-based approaches depending on intuition or surveys often lack objectivity and consistency. This challenge is particularly evident for incremental, company-specific products, such as automobiles, where forecasting must balance customer expectations, competitive dynamics, and technical product attributes in markets that evolve rapidly.
+
+Problem Formulation:
+The market share of complex, incremental new products should be predicted before their launch, based on their characteristic features and customer-relevant attributes.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: NN
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #015
+===========================================================================
+Paper: An intelligent estimation method for product design time
+Domain: Product Development
+
+Problem Context:
+The planning and control of product development rely heavily on the early estimation of product design time (PDT), which determines scheduling accuracy and resource allocation. In practice, designers often face challenges in estimating PDT due to limited information at the conceptual stage and the high uncertainty of new or modified designs. Existing analytical and empirical methods frequently lack generality and precision, as they are often tailored to specific products or depend on subjective assessments.
+
+Problem Formulation:
+The required product design time for a new or modified product should be predicted based on characteristic features derived from customer demands and design specifications.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: Fuzzy NN
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #016
+===========================================================================
+Paper: Evaluation and decision of products conceptual design schemes based on customer requirements
+Domain: Customer Analysis
+
+Problem Context:
+In an increasingly competitive market environment, understanding and accurately capturing customer requirements is essential for companies to secure market share and ensure long-term success. Products that precisely address these requirements are more likely to succeed, making the consideration of customer needs a central factor in the evaluation and selection of conceptual design alternatives.
+
+Problem Formulation:
+It should be predicted, how well each conceptual design satisfies specific customer requirements in order to support informed design decisions
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: NN
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #017
+===========================================================================
+Paper: Decision support for Design Conflicts: A model-based method to analyze the interactions between technical requirements and product characteristics
+Domain: Product Development
+
+Problem Context:
+The development of modern technical products involves diverse disciplines and numerous interdependent system elements, leading to increasing structural and dynamic complexity. As a result, understanding the relationships between product characteristics and technical requirements becomes essential to manage conflicting goals and identify optimal trade-offs. Conventional tools such as the House of Quality or Domain Mapping Matrices rely heavily on expert knowledge and often struggle to represent the full range of interactions within complex systems. Therefore, a systematic exploration of the product concept's state space, integrating technical requirements and physical interdependencies, is required to support decision-making in the early design phases.
+
+Problem Formulation:
+The quantitative influence of product characteristics on technical requirements should be predicted.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: NN
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #018
+===========================================================================
+Paper: Applying the random forest algorithm to predict engineering change effort
+Domain: General Product Development
+
+Problem Context:
+Shorter development cycles and increasing product complexity pose major challenges for manufacturing companies. At the same time, engineering changes account for a significant proportion of the total work capacity in product development. Estimating the effort of such changes is typically based on experience and rough judgment, which frequently leads to underestimation and inefficient resource allocation. Reliable estimation of engineering change effort is therefore essential for effective planning and resource management throughout the product development process.
+
+Problem Formulation:
+The effort required for an engineering change request should be predicted in order to anticipate the necessary resources and improve decision-making during the early phases of change management.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: RF
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. The ensemble method provides robust performance and handles complex feature interactions.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #019
+===========================================================================
+Paper: Fuzzy measurable house of quality and quality function deployment for fuzzy regression estimation problem
+Domain: General Product Development
+
+Problem Context:
+In the increasingly competitive industrial environment, companies are required to assess design time and effort already in the early stages of product development. Reliable estimation of product design time (PDT) is essential for planning, resource allocation, and project control, yet designers often face the challenge of making such assessments with limited information and subjective judgment. Traditional empirical and factor-based approaches have proven insufficient, as they neglect complex interdependencies between product characteristics, design conditions, and team factors.
+
+Problem Formulation:
+The required product design time for new or remodeled products should be predicted based on characteristic features, design conditions, and team-related factors derived from historical design data.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: SVR
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #020
+===========================================================================
+Paper: Optimal Product Portfolio Formulation by Merging Predictive Data Mining With Multilevel Optimization
+Domain: Product Development
+
+Problem Context:
+Companies face the challenge of developing modular product architectures that balance variety, cost efficiency, and responsiveness to market demand. Traditional static approaches to product portfolio formulation are limited in capturing these dynamics, necessitating methods that explicitly link customer preferences with engineering and enterprise-level design decisions.
+
+Problem Formulation:
+Overall product evaluations, such as customers' maximum acceptable price levels, should be predicted based on characteristic product features and customer preference data, in order to support the formulation of an optimal product portfolio.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: Naive Bayes
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #021
+===========================================================================
+Paper: Predicting design performance utilizing automated topic discovery
+Domain: Product Development
+
+Problem Context:
+Increasingly complex engineering design challenges demand diverse expertise and collaboration within design teams. In open innovation environments, the effective composition of these teams is crucial, as collective performance strongly depends on how individual members are positioned according to their capabilities within a sociotechnical system.
+
+Problem Formulation:
+Individual's performance in a design team should be predicted based on input variables that represent topic distributions.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: SVR
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #022
+===========================================================================
+Paper: The evaluation for technological innovation capability during product development of auto parts enterprises
+Domain: Product Development
+
+Problem Context:
+The development of automotive components is characterized by high demands on flexibility, quality, and responsiveness to diverse customer requirements. Auto parts enterprises must align their production development with vehicle manufacturers while ensuring safety, stability, environmental compliance, and cost efficiency. In this context, technological innovation represents a decisive factor for competitiveness, as it determines an enterprise's ability to adapt existing designs, manage complex projects, and exploit intellectual property effectively. The evaluation of this innovation capability thus requires a structured consideration of design flexibility, patent utilization, and project management performance.
+
+Problem Formulation:
+The overall level of an enterprise's technological innovation capability during product development should be predicted based on quantitative and qualitative indicators describing its design flexibility, patent strategy, and project management performance.
+
+ML Solution:
+- Problem Type: Regression
+- Algorithm: NN
+- Rationale: Regression is suitable because the task requires predicting continuous numerical values or quantitative outcomes. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #023
+===========================================================================
+Paper: Can machine learning approaches predict green purchase intention? -A study from Indian consumer perspective
+Domain: General Product Development
+
+Problem Context:
+The influence of individual awareness, environmental consciousness, social norms, and perceived inconvenience on the willingness to choose sustainable products is analyzed. Data from 310 online survey responses reflect the growing relevance of green consumption within the Indian market. The context centers on the broader challenge of understanding how personal values and social influences translate into environmentally responsible purchase intentions.
+
+Problem Formulation:
+Consumers should be identified as either green or non-green based on their behavioral and cognitive characteristics.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: Decision Tree, Random Forest, Gradient Boosting, XGBoost, K-Nearest Neighbour, and Support Vector Machine
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. The ensemble method provides robust performance and handles complex feature interactions. Support vector methods are effective for high-dimensional data and non-linear decision boundaries.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #024
+===========================================================================
+Paper: Machine Learning-driven Marketing Strategies in the Mobile Gadget Industry for Enhancing Customer Engagement and Sales Optimization
+Domain: Customer Analysis
+
+Problem Context:
+The objective is to transform the face of product development and marketing strategies within the mobile gadget industry.
+
+Problem Formulation:
+Customers should be categorized according to their preferences, browsing histories, and responses to market surveys in order to determine suitable requirement groups.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: LSTM, DT, RF, and ANN
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. The ensemble method provides robust performance and handles complex feature interactions. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #025
+===========================================================================
+Paper: Identifying Promising Technologies Considering Technology Convergence: A Patent-Based Machine-Learning Approach
+Domain: General Product Development
+
+Problem Context:
+Rapid technological change and increasing interconnections across disciplines have made technology convergence a central aspect of innovation and new product development. While earlier research emphasized factors such as technological strength or assignee influence to identify key technologies, it often overlooked the role of convergence between different technological domains. Since innovations increasingly emerge at the intersections of heterogeneous technologies, understanding how technologies mediate or foster such convergence has become essential for assessing their potential impact and future significance.
+
+Problem Formulation:
+Technologies should be identified as either promising or non-promising based on their convergence-related indicators.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: DT, RF, XGB
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. The ensemble method provides robust performance and handles complex feature interactions.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #026
+===========================================================================
+Paper: A Hybrid Framework Using Natural Language Processing and Collaborative Filtering for Performance Efficient Feedback Mining and Recommendation
+Domain: Performance Evaluation
+
+Problem Context:
+User feedback shared through app stores, product forums, and social media contains valuable insights for product development, often representing the "voice of the users." However, due to the high volume, diversity, and speed of such feedback, relevant information frequently fails to reach organizations promptly. The growing reliance on digital platforms for sharing experiences and opinions has amplified this challenge, highlighting the need for structured mechanisms to capture, process, and utilize user feedback efficiently across multiple channels.
+
+Problem Formulation:
+User reviews should be categorized based on the enterprise or product domain to which the feedback pertains.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: RF, DT, MNB, KNN, SVM
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. The ensemble method provides robust performance and handles complex feature interactions. Support vector methods are effective for high-dimensional data and non-linear decision boundaries. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #027
+===========================================================================
+Paper: Extracting Customer-Related Information for Need Identification
+Domain: Customer Analysis
+
+Problem Context:
+The growing volume of customer-generated content on social media provides companies with valuable insights into authentic customer experiences and usage behavior. Product reviews, in particular, offer unfiltered feedback that goes beyond product characteristics to include information about customers' habits, personal environments, and routines. Such information supports the identification of underlying customer needs that are not consciously articulated but are essential for innovative, user-centered product development. However, due to the unstructured and extensive nature of online text data, the systematic and efficient extraction of this type of information requires automated approaches capable of distinguishing relevant objective content from subjective expressions.
+
+Problem Formulation:
+Sentences in product reviews should be identified as either objective or subjective to enable the extraction of user-related information that helps reveal customer needs.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: NB, DT, SVM
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. Support vector methods are effective for high-dimensional data and non-linear decision boundaries.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #028
+===========================================================================
+Paper: BRIDGING THE SEMANTIC GAP IN CUSTOMER NEEDS ELICITATION: A MACHINE LEARNING PERSPECTIVE
+Domain: Customer Analysis
+
+Problem Context:
+Eliciting customer needs is a crucial phase in product development, as it determines how customer intentions and preferences are translated into concrete product specifications. However, customers often express their needs in vague, non-technical language, creating a semantic gap between customer perceptions and design parameters. This discrepancy complicates communication between customers and designers and makes it difficult to link descriptive needs with technical specifications. Traditional approaches to bridge this gap depend on manual interpretation and predefined mappings, which are time-consuming, subjective, and impractical for large or rapidly evolving product families.
+
+Problem Formulation:
+Product variants should be categorized based on the customer needs they can satisfy.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: SVM, DT
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. Support vector methods are effective for high-dimensional data and non-linear decision boundaries.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #029
+===========================================================================
+Paper: Fast lead user identification framework
+Domain: Customer Analysis
+
+Problem Context:
+A substantial share of product innovation originates from customers, yet only a small fraction of them actively engage in such innovation activities. These users, referred to as lead users, anticipate market needs earlier than others and often devise novel solutions to meet those needs. Traditional approaches to identifying such individuals-such as expert-based surveys or interviews-are resource-intensive and time-consuming. In contrast, social media platforms offer access to extensive, behavior-rich user data, creating new opportunities for systematically identifying individuals who display early adoption behavior and innovation potential.
+
+Problem Formulation:
+Twitter users should be identified as lead users or non-lead users based on behavioral, linguistic, and network-related characteristics derived from their online activities and profile information.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: C4.5 DT
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #030
+===========================================================================
+Paper: Supervised multilabel classification techniques for categorising customer requirements during the conceptual phase in the new product development
+Domain: Customer Analysis
+
+Problem Context:
+During the conceptual phase of new product development, identifying and structuring customer needs is essential for defining product specifications and guiding design decisions. Traditional approaches to capturing the voice of the customer, such as surveys or interviews, are often limited by cost and scope. Therefore, companies increasingly rely on large volumes of online customer feedback from e-commerce platforms. However, these data are unstructured and vary greatly in quality and content, making it difficult to extract meaningful insights about customer preferences and product design requirements.
+
+Problem Formulation:
+Customer reviews should be categorized according to relevant product design aspects and the expressed sentiment, in order to systematically derive customer needs that inform product development decisions.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: SVM, Naive Bayes
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. Support vector methods are effective for high-dimensional data and non-linear decision boundaries.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #031
+===========================================================================
+Paper: Social media mining for ideation: Identification of sustainable solutions and opinions
+Domain: General Product Development
+
+Problem Context:
+The increasing availability of user-generated data on social media enables access to large-scale information about consumers, trends, technologies, and companies. Social media platforms serve as open spaces where individuals express opinions and share ideas related to products, services, and sustainability. However, this information is often unstructured and of varying quality, which poses challenges for extracting relevant insights. In the context of sustainable product and technology development, identifying valuable ideas from this data can support early ideation and align innovation processes with social and environmental needs.
+
+Problem Formulation:
+It should be identified whether social media posts contain an explicit idea or not.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: SVM, Logistic Regression (Datesatz klein)
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. Support vector methods are effective for high-dimensional data and non-linear decision boundaries.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #032
+===========================================================================
+Paper: Trend Mining for Predictive Product Design
+Domain: Product Development
+
+Problem Context:
+In dynamic product markets, customer preferences and design requirements evolve continuously over time. Conventional demand modeling approaches, which typically rely on static data snapshots, fail to capture these temporal dynamics and therefore provide limited guidance for identifying which product features should be retained, modified, or retired in subsequent product generations.
+
+Problem Formulation:
+Product attributes should be categorized as standard, nonstandard, or obsolete based on how they evolve over time, enabling design engineers to decide which features to retain, redesign, or phase out.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: DT
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #033
+===========================================================================
+Paper: A problem-solving approach to product design using decision tree induction based on intuitionistic fuzzy
+Domain: Product Development
+
+Problem Context:
+Customer complaints often reveal gaps between product design specifications and user requirements. During product development, designers must interpret customer feedback to identify shortcomings in product functionality or reliability. However, the symptoms of such problems are typically vague, subjective, and uncertain, making it difficult to pinpoint the exact cause. Because these complaints arise from user observations rather than measurable engineering data, the relationship between perceived symptoms and potential design faults is often ambiguous. Addressing this uncertainty is essential to prevent problem recurrence and to integrate corrective insights into future product design considerations.
+
+Problem Formulation:
+Observed symptoms of failure should be categorized to specific design faults, in order to get to know the underying cause of customer complaint.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: DT
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #034
+===========================================================================
+Paper: Requirements extraction from engineering standards - systematic evaluation of extraction techniques
+Domain: Requirements Engineering
+
+Problem Context:
+Engineering design is a knowledge-intensive activity that relies heavily on accessing and managing information embedded in technical documents. Among these, engineering standards play a key role by defining normative requirements for products, processes, and services and by supporting decision-making throughout the product development process. However, current practices for working with standards are inefficient, as engineers must manually identify and transfer relevant content from static document formats such as PDFs into engineering tools. This manual process is time-consuming and prone to inconsistencies, making the systematic and efficient use of standards information a persistent challenge in engineering practice.
+
+Problem Formulation:
+Requirements should be identified within standards documents to enable their systematic use in product development.
+
+ML Solution:
+- Problem Type: Classification
+- Algorithm: BERT, SVM, RF, NB
+- Rationale: Classification is appropriate because the task involves categorizing entities into predefined classes or groups. The ensemble method provides robust performance and handles complex feature interactions. Support vector methods are effective for high-dimensional data and non-linear decision boundaries. Neural network approaches can capture complex patterns and handle large-scale data effectively.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #035
+===========================================================================
+Paper: A CLUSTERING AND WORD SIMILARITY BASED APPROACH FOR IDENTIFYING PRODUCT FEATURE WORDS
+Domain: Product Development
+
+Problem Context:
+To evaluate how products perform in the market and how they are perceived by customers, product designers increasingly rely on publicly available customer feedback. Online product reviews on e-commerce platforms represent a rich and authentic source of such information, as consumers voluntarily express their opinions without external prompting. However, analyzing this data poses challenges due to the ambiguity and variability of natural language-different words or phrases may refer to the same product feature, while others may have multiple meanings. Therefore, an essential step in understanding customer feedback is to capture the product features discussed in these reviews in a structured and compact form.
+
+Problem Formulation:
+Different terms referring to the same product feature should be grouped together to create a concise and unified representation of product features discussed in online reviews.
+
+ML Solution:
+- Problem Type: Clustering
+- Algorithm: kmeans
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. The clustering algorithm can identify natural groupings in the data without requiring labeled examples.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #036
+===========================================================================
+Paper: Phrase Embedding and Clustering for Sub-Feature Extraction From Online Data
+Domain: General Product Development
+
+Problem Context:
+In product design, understanding customer preferences for specific product characteristics is essential to inform embodiment design decisions. Traditionally, such insights have been derived from surveys or interviews, which are often time-consuming, costly, and prone to bias. With the rise of online platforms, user-generated content has become a rich and easily accessible source for analyzing customer opinions about products. Previous studies have mainly focused on identifying general feature categories from this data, such as "camera" or "battery," rather than the detailed components that constitute these features. However, in practical product development, sub-features-such as "front camera," "rear camera," or "battery life"-are crucial for determining component configurations and guiding design improvements.
+
+Problem Formulation:
+Semantically similar phrases from online product reviews should be grouped into distinct sets that represent related sub-features of a product.
+
+ML Solution:
+- Problem Type: Clustering
+- Algorithm: HDBSCAN, spectral clustering
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. The clustering algorithm can identify natural groupings in the data without requiring labeled examples.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #037
+===========================================================================
+Paper: Customer Market Segmentation using Machine Learning Algorithm
+Domain: Customer Analysis
+
+Problem Context:
+In an increasingly data-driven business environment, companies seek to enhance competitiveness by better understanding and addressing customer needs. Market success depends heavily on the ability to attract, retain, and satisfy customers through tailored offerings and marketing strategies. However, consumers differ significantly in their preferences, purchasing power, and behavioral patterns. To efficiently allocate marketing resources and design effective strategies, businesses must identify groups of customers with similar characteristics and needs. This requires analyzing large volumes of behavioral and transactional data to uncover underlying patterns in consumer behavior.
+
+Problem Formulation:
+Customers should be grouped into distinct segments based on similarities in their spending and behavioral characteristics.
+
+ML Solution:
+- Problem Type: Clustering
+- Algorithm: Kmeans, Spectral clustering, Agglomerative Clustering, Gaussian Mixture Model-Based, DBSCAN
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels. The clustering algorithm can identify natural groupings in the data without requiring labeled examples.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #038
+===========================================================================
+Paper: Market segmentation for product family positioning based on fuzzy clustering
+Domain: Customer Analysis
+
+Problem Context:
+Manufacturers aim to expand their product lines through product families to remain competitive in increasingly diversified markets. However, the growing diversity of customer needs challenges the effectiveness of mass marketing approaches. To position product families appropriately, companies must understand variations in customer preferences while maintaining cost efficiency in production. Market segmentation enables firms to identify homogeneous groups of customers with similar purchasing behaviors, facilitating targeted product planning that balances customer diversity and manufacturing economy.
+
+Problem Formulation:
+Customers should be grouped based on similarities in their purchasing behavior derived from product attribute combinations, enabling the identification of distinct market segments that support effective product family positioning.
+
+ML Solution:
+- Problem Type: Clustering
+- Algorithm: Fuzzy Clustering
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #039
+===========================================================================
+Paper: Improving the Accuracy and Diversity of Feature Extraction From Online Reviews Using Keyword Embedding and Two Clustering Methods
+Domain: General Product Development
+
+Problem Context:
+In product design, understanding customer preferences for product features is essential to align design decisions with user needs. Previous studies using online data have mainly concentrated on identifying and analyzing main product features or overall usage patterns. However, for manufacturers, sub-features-smaller, component-level attributes-are equally critical, as they directly influence the configuration of product components and the realization of desired functions during development.
+
+Problem Formulation:
+Extracted sub-features should be grouped into meaningful categories that reflect their functional or contextual similarity within the product design domain.
+
+ML Solution:
+- Problem Type: Clustering
+- Algorithm: spectral clustering
+- Rationale: Clustering is applicable because the task involves grouping similar entities based on shared characteristics without predefined labels.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #040
+===========================================================================
+Paper: Product development with data mining techniques: A case on design of digital camera
+Domain: Product Development
+
+Problem Context:
+Enterprises increasingly invest in product development to differentiate their offerings and better satisfy customer expectations in highly competitive and rapidly changing markets. With shorter product life cycles and shifting consumer preferences, companies must balance customer-oriented design with cost efficiency through approaches such as concurrent engineering. Integrating customer needs early in the design phase is therefore essential to improving competitiveness, product quality, and time-to-market, particularly in industries such as digital imaging where trends evolve quickly.
+
+Problem Formulation:
+In the development of new digital camera products, relationships between customer preferences and specific product attributes should be identified to reveal how combinations of features influence customers' choices of camera styles.
+
+ML Solution:
+- Problem Type: Association Rule
+- Algorithm: Apriori algorithm, C5 DT
+- Rationale: Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #041
+===========================================================================
+Paper: Bridging customer knowledge to innovative product development: a data mining approach
+Domain: Customer Analysis
+
+Problem Context:
+In fast-cycle industries, firms face high product failure rates and growing pressure to shorten product life cycles while meeting dynamic customer expectations. Although customer knowledge has long been recognised as a crucial factor in successful product development, many companies still struggle to effectively capture and apply this knowledge during the innovation process. A large volume of customer data is available, yet its integration into product design decisions often remains unstructured. Particularly in the smartphone industry, identifying the key product features that influence purchasing decisions is critical for translating customer insights into competitive product concepts.
+
+Problem Formulation:
+The relationships between customer preferences and specific product features should be identified to determine which design characteristics most strongly influence customers' choice of smartphone type.
+
+ML Solution:
+- Problem Type: Association Rule
+- Algorithm: DT, Apriori
+- Rationale: Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #042
+===========================================================================
+Paper: An approach of product usability evaluation based on Web mining in feature fatigue analysis
+Domain: Product Development
+
+Problem Context:
+Customers often value multifunctional products during purchase decisions, expecting more features to enhance performance and convenience. However, once using such products, they frequently experience difficulties that reduce satisfaction due to poor usability, a phenomenon known as feature fatigue. Evaluating and improving usability at the early product definition stage is therefore essential to prevent later dissatisfaction. Traditional usability assessments, however, depend on physical prototypes or user testing, which are only available in later development phases and are costly and time-consuming to conduct, especially when large data samples are required.
+
+Problem Formulation:
+The relationships between product features and customer opinions should be identified regarding their usability.
+
+ML Solution:
+- Problem Type: Association Rule
+- Algorithm: Apiori algorithm
+- Rationale: Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #043
+===========================================================================
+Paper: Mining affective needs of automotive industry customers for building a mass-customization recommender system
+Domain: Customer Analysis
+
+Problem Context:
+Mass customization in the automotive industry aims to tailor products to individual customer preferences. However, existing online configuration systems often overwhelm users with excessive design options, making it difficult for them to articulate their true affective needs. This leads to confusion during the vehicle configuration process and hinders the identification of design features that align with customers' emotional expectations.
+
+Problem Formulation:
+The relationships between customers' affective needs and the design parameters of automotive products must be identified.
+
+ML Solution:
+- Problem Type: Association Rule
+- Algorithm: CBA
+- Rationale: Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #044
+===========================================================================
+Paper: Customer Requirements Mapping Method Based on Association Rule Mining for Mass Customization
+Domain: Customer Analysis
+
+Problem Context:
+Customer requirements analysis represents a crucial step in product variety design for mass customization, where companies aim to meet diverse individual needs without incurring excessive complexity or cost. Traditional approaches such as Quality Function Deployment (QFD) are widely used to translate the voice of the customer into product characteristics, yet they rely heavily on subjective human judgment during the extraction and weighting of customer requirements. The resulting imprecision and ambiguity often reduce the reliability of requirement interpretation. Furthermore, since most new products evolve from existing product families, the management of product variants and their relationships to customer needs becomes increasingly complex, calling for systematic approaches to establish consistent mappings between customer requirements and product architecture.
+
+Problem Formulation:
+Based on the general data structure of a product family (Generic Bill of Materials), relationships must be identified between customer requirements and corresponding elements of the product architecture to enable consistent and reliable mapping of customer needs to product variants.
+
+ML Solution:
+- Problem Type: Association Rule
+- Algorithm: Apriori Algorithm
+- Rationale: Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #045
+===========================================================================
+Paper: A patent text-based product conceptual design decision-making approach considering the fusion of incomplete evaluation semantic and scheme beliefs
+Domain: Product Development
+
+Problem Context:
+Evaluating conceptual design alternatives represents a critical stage in product development, as the selection of suitable conceptual schemes relies heavily on the interpretation of design information. When this evaluation depends primarily on the subjective experience of decision makers, incomplete or ambiguous semantics can arise, leading to gaps in the decision matrix. Although previous approaches attempt to compensate for such missing information using attributes of candidate schemes, they often disregard the potential of external design knowledge sources, such as patents, which limits the objectivity and completeness of the evaluation process.
+
+Problem Formulation:
+The relationships between evaluation criteria should be identified.
+
+ML Solution:
+- Problem Type: Association Rule
+- Algorithm: Apriori Algorithm
+- Rationale: Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items. The association rule algorithm efficiently discovers frequent patterns and relationships in transactional data.
+
+===========================================================================
+
+===========================================================================
+ML Application Case #046
+===========================================================================
+Paper: Integrating rough set theory and fuzzy association rule mining for product kansei knowledge analysis
+Domain: Product Development
+
+Problem Context:
+In the highly competitive global market, new product development has shifted from a production-oriented to a market-oriented approach. As functional differences between products diminish, customers' purchasing decisions are increasingly influenced by aesthetic impressions and emotional responses. Capturing and translating these emotional needs into tangible design features has become a decisive factor for product success. However, understanding customers' emotional cognition and linking it to concrete design elements remains challenging due to the vagueness and subjectivity of human perception.
+
+Problem Formulation:
+The potential relationships between key emotional attributes (Kansei) and specific product design features must be identified to enable the targeted translation of customer perceptions into product form characteristics.
+
+ML Solution:
+- Problem Type: Association Rule
+- Algorithm: FARM
+- Rationale: Association rule mining is appropriate because the task seeks to discover relationships and patterns between variables or items.
+
+===========================================================================
